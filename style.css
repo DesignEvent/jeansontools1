@@ -1,0 +1,256 @@
+/* GOOGLE FONT */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background: #0d0d0d;
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* HEADER */
+header{
+    width: 100%;
+    padding: 20px 8%;
+    background: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #222;
+}
+
+.logo img{
+    width: 500px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #00ff99;
+    box-shadow: 0 0 25px #00ff99;
+}
+
+/* HERO SECTION */
+.hero{
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 10%;
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.9)),
+    url("./Images/jeanson.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+.hero h1{
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #00ff99;
+    max-width: 1000px;
+    text-shadow: 0 0 10px #00ff99;
+}
+
+.hero p{
+    max-width: 800px;
+    font-size: 1.1rem;
+    color: #ccc;
+}
+
+/* SECTION GENERAL */
+section{
+    padding: 70px 10%;
+}
+
+section h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #00ff99;
+    text-align: center;
+}
+
+/* CONTACT */
+.contact{
+    background: #111;
+    border-top: 1px solid #222;
+    border-bottom: 1px solid #222;
+}
+
+.contact p{
+    text-align: center;
+    margin: 12px 0;
+    color: #ddd;
+    font-size: 1rem;
+}
+
+/* SERVICES */
+.Service{
+    background: #0d0d0d;
+}
+
+.Service p{
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+    color: #ccc;
+    font-size: 1rem;
+    line-height: 2;
+}
+
+/* LOGIN FORM */
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #111;
+}
+
+.form-container{
+    width: 100%;
+    max-width: 420px;
+    background: #1a1a1a;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 25px rgba(0,255,153,0.2);
+    border: 1px solid #222;
+}
+
+.form-container h2{
+    text-align: center;
+    margin-bottom: 30px;
+    color: #00ff99;
+}
+
+.input-box{
+    margin-bottom: 20px;
+}
+
+.input-box label{
+    display: block;
+    margin-bottom: 8px;
+    color: #ccc;
+    font-size: 0.95rem;
+}
+
+.input-box input{
+    width: 100%;
+    padding: 14px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background: #222;
+    color: #fff;
+    font-size: 1rem;
+    border: 1px solid transparent;
+    transition: 0.3s ease;
+}
+
+.input-box input:focus{
+    border-color: #00ff99;
+    box-shadow: 0 0 10px #00ff99;
+}
+
+/* BUTTON */
+.login-btn{
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    background: #00ff99;
+    color: #000;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.login-btn:hover{
+    background: #00cc7a;
+    transform: scale(1.03);
+}
+
+/* REGISTER */
+.register{
+    text-align: center;
+    margin-top: 20px;
+    color: #aaa;
+}
+
+.register a{
+    color: #00ff99;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.register a:hover{
+    text-decoration: underline;
+}
+
+/* FLOATING SOCIAL BUTTONS */
+.social-buttons{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 999;
+}
+
+.telegram-float,
+.whatsapp-float{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 28px;
+    text-decoration: none;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    transition: 0.3s ease;
+}
+
+.telegram-float{
+    background: #0088cc;
+}
+
+.whatsapp-float{
+    background: #25D366;
+}
+
+.telegram-float:hover,
+.whatsapp-float:hover{
+    transform: scale(1.1);
+}
+
+/* RESPONSIVE */
+@media(max-width: 768px){
+
+    .hero h1{
+        font-size: 1.8rem;
+    }
+
+    .hero p{
+        font-size: 1rem;
+    }
+
+    section{
+        padding: 50px 6%;
+    }
+
+    .form-container{
+        padding: 30px 20px;
+    }
+}
+.pow img {
+    height: 200px;
+
+}
